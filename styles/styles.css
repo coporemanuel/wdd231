@@ -166,7 +166,7 @@ footer p {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: darkblue;
     color: white;
     cursor: pointer;
 }
@@ -200,7 +200,7 @@ footer p {
 }
 
 .course-card.completed {
-    border: 1px solid green;
+    border: 1px solid black;
     background-color: #e0ffe0;
 }
 
