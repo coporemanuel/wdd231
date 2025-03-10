@@ -6,7 +6,7 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    padding: 0 10px; /* Añadir padding para evitar que el contenido toque los bordes en pantallas pequeñas */
+    padding: 0 10px; 
 }
 
 h1 {
@@ -72,7 +72,6 @@ nav a:hover {
 .main-container {
     width: 100%;
     max-width: 800px;
-    /* Puedes agregar más estilos aquí si es necesario */
 }
 
 .flex-row {
@@ -87,7 +86,6 @@ nav a:hover {
     text-align: center;
     background-color: darkblue;
     color: white;
-    border: 10px solid var(--primary-color);
     padding: 10px;
     margin-right: 30px;
     margin-top: 0;
@@ -136,7 +134,6 @@ nav a:hover {
     text-align: center;
     background-color: darkblue;
     color: white;
-    border: 10px solid var(--primary-color);
     padding: 10px;
     margin-right: 30px;
     margin-top: 0px;
@@ -169,7 +166,7 @@ footer p {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF; /* Light blue color */
+    background-color: #007BFF;
     color: white;
     cursor: pointer;
 }
@@ -179,14 +176,12 @@ footer p {
     background-color: #0056b3;
 }
 
-/* Estilo para organizar los botones en columnas */
 .course-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 10px; /* Espacio entre botones */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; 
 }
 
-/* Estilo para la sección de detalles del curso */
 .course-details {
     margin: 10px 0;
     padding: 15px;
@@ -218,7 +213,6 @@ footer p {
 .container {
     width: 100%;
     max-width: 800px;
-    /* Puedes agregar más estilos aquí si es necesario */
 }
 
 /* Larger Views */
