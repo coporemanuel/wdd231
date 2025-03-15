@@ -54,6 +54,11 @@ nav {
 nav ul {
     list-style-type: none;
 }
+
+nav ul li:hover{
+    background-color: rgb(106, 106, 115);
+}
+
 nav a {
     display: block;
     color: #fff;
@@ -63,9 +68,11 @@ nav a {
 }
 nav a:hover {
     text-decoration: overline;
+    color: black;
 }
 .active {
     color: yellow;
+    font-size: 1.2rem;
 }
 
 /* containers */
@@ -222,6 +229,15 @@ footer p {
     }
     nav ul li {
         flex: 1 1 100%;
+    }
+
+    nav ul li:hover{
+        background-color: rgb(106, 106, 115);
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: black;
     }
 
     .country img {
