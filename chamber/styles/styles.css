@@ -10,15 +10,15 @@
 	box-sizing: border-box;
 }
 
-body {
+body,html {
     font-family: "Ubuntu", sans-serif;
+    background-color: var(--thirdcolor);
 }
 
 main {
 	margin: 0 auto;
 	padding: 0.5rem;
 	max-width: 700px;
-	background-color:var(--thirdcolor);
 }
 /* MENU */
 
