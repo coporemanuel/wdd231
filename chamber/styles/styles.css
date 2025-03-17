@@ -1,0 +1,261 @@
+:root{
+    --primarycolor: #BBB5BD;
+    --secondcolor: #CDD3CE;
+    --thirdcolor: #F9F8F8;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+main {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 700px;
+	background-color:var(--thirdcolor);
+}
+/* MENU */
+
+#myButton {
+    display: none;
+}
+
+.menu{
+    background-color: var(--primarycolor);
+}
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    font-size: 1.5rem;
+    gap: 3rem;
+    padding-bottom: 1rem;
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+}
+
+.menu ul li a {
+    padding: 20px;
+}
+.menu ul a:hover {
+    background-color: var(--thirdcolor);
+    padding: 1rem;
+}
+
+/* HEADERCONTAINER */
+header {
+    background-color: var(--primarycolor);
+    height: 5rem;
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+}
+
+header img, h1 {
+    padding-bottom: 1rem;
+}
+
+.active {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* CONTAINER OF COMPANIES */
+
+.list-companies {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.list-companies button {
+	padding: 1rem;
+	font-weight: 700;
+    background-color: var(--primarycolor);
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: var(--secondcolor);
+
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 2rem;
+	align-items: center;
+}
+
+.grid section {
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-size: 0.85rem;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+
+/* FOOTER */
+footer{
+    background-color: var(--primarycolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 1rem 1rem 1rem 0;
+
+}
+
+.class-project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 1rem 1rem 1rem;
+}
+
+footer div {
+    margin-bottom: 3.7rem;
+}
+
+footer div img {
+    width: 30px;
+    height: auto;
+    margin: 0 5px;
+}
+
+footer > div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+
+/* small view  */
+@media (max-width: 900px) {
+    #myButton {
+        display: grid;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+        width: 100%;
+        text-align: right;
+        padding: .25rem 2vw;
+    }
+    header {
+        display: flex;
+        grid-template-columns: 44px auto 44px;
+        align-items: end;
+    }
+
+    h1 {
+        white-space: nowrap;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu.show{
+        display: block;
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        background-color: var(--secondcolor);
+    }
+
+    .menu ul li a {
+        display: block;
+        color: black;
+        text-align: left;
+        border-bottom: 1px solid var(--secondcolor);
+    }
+
+    .menu ul li a:hover {
+        background-color: var(--primarycolor);
+        color: white;
+    }
+
+    .menu.active ul {
+        background-color: var(--secondcolor);
+    }
+    
+    footer {
+        display: grid;
+    }
+
+    .details {
+        margin: 1rem;
+    }
+}
+
+@media (min-width: 730px) {
+    footer{
+        display: flex;
+    }
+}
