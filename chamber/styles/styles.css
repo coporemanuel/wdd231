@@ -227,6 +227,10 @@ footer > div:nth-child(2) {
         color: white;
     }
 
+    .active {
+        text-decoration: underline;
+    }
+
     footer {
         display: grid;
     }
