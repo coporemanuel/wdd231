@@ -37,7 +37,7 @@ async function loadData() {
             const section = document.createElement("section");
             section.innerHTML = `
                 <img src="${company.images}" alt="${company.name}" />
-                <h3>${company.name}</h3>
+                <h2>${company.name}</h2>
                 <p>${company.address}</p>
                 <p>${company.phoneNumber}</p>
                 <a href="${company.websiteUrl}" target="_blank">Web Site</a>

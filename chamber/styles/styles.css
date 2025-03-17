@@ -92,6 +92,11 @@ section {
     background-color: var(--secondcolor);
 }
 
+section h2 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
