@@ -61,3 +61,5 @@ document.addEventListener('DOMContentLoaded', function() {
         menuBtn.textContent = navigation.classList.contains('show') ? '✖' : '☰';
     });
 });
+
+// INDEX PAGE 

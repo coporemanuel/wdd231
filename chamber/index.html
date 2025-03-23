@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,46 +32,34 @@
         </ul>
     </nav>
     <main>
-        <main>
-            <div class="call-to-action">
-                <h2>Join the Chamber</h2>
-                <a href="join.html" style="text-decoration: none; color: blue;">Click here to join the Chamber of Commerce</a>
-            </div>
-        
-            <!-- EVENTS  -->
+        <div class="hero">
+            <img src="images/bermejo.webp" alt="join the chamber">
+        </div>
+        <div class="join">
+            <h2>Join the Chamber</h2>
+            <a href="join.html">Click here to join the Chamber of Commerce</a>
+        </div>
+        <div class="medium">
+        <!-- EVENTS  -->
             <div class="events">
                 <h2>Current Events</h2>
                 <ul>
-                    <li>Annual Business Meeting - March 30</li>
+                    <li>Business Meeting - March 30</li>
                     <li>Networking Luncheon - April 15</li>
                 </ul>
             </div>
-        
             <!-- WEATHER  -->
             <div class="weather">
                 <h2>Weather</h2>
-                <p>Currently: 75°F, Clear Skies</p>
+                <p id="current-weather"></p>
+                <ul id="forecast"></ul>
             </div>
-        
-            <!-- COMPANIES  -->
-            <div class="spotlights">
-                <h2>Company Spotlights</h2>
-                <div class="spotlight">
-                    <div>
-                        <h3>Business 1</h3>
-                        <p>Highlight about Business 1.</p>
-                    </div>
-                    <div>
-                        <h3>Business 2</h3>
-                        <p>Highlight about Business 2.</p>
-                    </div>
-                    <div>
-                        <h3>Business 3</h3>
-                        <p>Highlight about Business 3.</p>
-                    </div>
-                </div>
-            </div>
-        </main>
+        </div>
+        <!-- COMPANIES  -->
+        <div>
+            <h2>Company Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </div>
     </main>
     <footer>
         <div class="class-project">
@@ -97,6 +86,7 @@
             <a href="tel:111111111">(111)-111-111</a>
         </div>
     </footer>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </body>
 </html>

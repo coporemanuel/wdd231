@@ -4,7 +4,8 @@
         "address": "Av. Mariscal Santa Cruz, La Paz, Bolivia",
         "phoneNumber": 22145000,
         "websiteUrl": "https://www.ypfb.gob.bo",
-        "images": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/YPFB_Logo.svg/2560px-YPFB_Logo.svg.png"
+        "images": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/YPFB_Logo.svg/2560px-YPFB_Logo.svg.png",
+        "membershipLevel": "Bronze"
 
     },
 
@@ -13,7 +14,8 @@
         "address": "Calle Mercado 1208, La Paz, Bolivia",
         "phoneNumber": 22408181,
         "websiteUrl":"https://www.bmsc.com.bo",
-        "images":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Banco_Mercantil_Santa_Cruz_Logo.svg/2560px-Banco_Mercantil_Santa_Cruz_Logo.svg.png"
+        "images":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Banco_Mercantil_Santa_Cruz_Logo.svg/2560px-Banco_Mercantil_Santa_Cruz_Logo.svg.png",
+        "membershipLevel": "Gold"
 
     },
 
@@ -22,7 +24,9 @@
         "address": "Av. Mariscal Santa Cruz 980, La Paz, Bolivia",
         "phoneNumber": 800101010,
         "websiteUrl":"https://www.entel.bo/",
-        "images":"https://upload.wikimedia.org/wikipedia/commons/a/a3/ENTEL_Bolivia_Logo.svg"
+        "images":"https://upload.wikimedia.org/wikipedia/commons/a/a3/ENTEL_Bolivia_Logo.svg",
+        "membershipLevel": "Silver"
+
 
     },
 
@@ -31,7 +35,9 @@
         "address":"Av Montes 500, La Paz, Bolivia",
         "phoneNumber": 22444444,
         "websiteUrl":"https://www.cbn.bo",
-        "images": "https://seeklogo.com/images/C/cerveceria-boliviana-nacional-logo-475B25044B-seeklogo.com.png"
+        "images": "https://seeklogo.com/images/C/cerveceria-boliviana-nacional-logo-475B25044B-seeklogo.com.png",
+        "membershipLevel": "Bronze"
+
 
     },
 
@@ -40,7 +46,9 @@
         "address": "Av Camacho 1488, La Paz, Bolivia",
         "phoneNumber": 22313333,
         "websiteUrl":"https://www.bancounion.com.bo",
-        "images":"https://upload.wikimedia.org/wikipedia/commons/4/43/Logo_del_Banco_Union.jpg"
+        "images":"https://upload.wikimedia.org/wikipedia/commons/4/43/Logo_del_Banco_Union.jpg",
+        "membershipLevel": "Silver"
+
 
     },
 
@@ -49,7 +57,9 @@
         "address": "Av Ballivian 503, La Paz, Bolivia",
         "phoneNumber": 44525555,
         "websiteUrl":"https://www.ende.bo",
-        "images": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Logo_ende.png"
+        "images": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Logo_ende.png",
+        "membershipLevel": "Bronze"
+
 
     },
 
@@ -58,7 +68,8 @@
         "address":"Calle Sucre 123, Sucre, Bolivia",
         "phoneNumber": 46451212,
         "websiteUrl":"https://www.bnb.com.bo",
-        "images":"https://brandemia.org/sites/default/files/inline/images/bnb_logo_portada.jpg"
+        "images":"https://brandemia.org/sites/default/files/inline/images/bnb_logo_portada.jpg",
+        "membershipLevel": "Gold"
 
     }
 ]
