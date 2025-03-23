@@ -263,7 +263,7 @@ div h2 {
     border-radius: 10px;
     box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.1);
     word-wrap: break-word;
-    overflow: ellipsis;
+    overflow: hidden;
     white-space: normal;
 }
 
