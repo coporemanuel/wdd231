@@ -225,8 +225,8 @@ div h2 {
 }
 
 .medium {
-    display: flex; /* Activa el modo flexbox */
-    justify-content: center; /* Espacio entre los contenedores */
+    display: flex;
+    justify-content: center;
     align-items: center;
     height: 50vh;
     gap: 20px;
