@@ -9,12 +9,13 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://coporemanuel.github.io/wdd231/images/descarga.webp">
     <meta property="og:url" content="https://coporemanuel.github.io/wdd231/chamber/directory.html">
-    <title>Chamber of Commerce Directory</title>
+    <title>Home Page Copore Solutions</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,26 +26,53 @@
     <nav class="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html" class="active">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Chamber of Commerce Directory</h1>
-        <div class="list-companies">
-            <button id="grid" aria-label="Grid View">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
-                    <path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm240 0q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm240 0q-33 0-56.5-23.5T640-240q0-33 23.5-56.5T720-320q33 0 56.5 23.5T800-240q0 33-23.5 56.5T720-160ZM240-400q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm240 0q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm240 0q-33 0-56.5-23.5T640-480q0-33 23.5-56.5T720-560q33 0 56.5 23.5T800-480q0 33-23.5 56.5T720-400ZM240-640q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640Z"/>
-                </svg>
-            </button>
-            <button id="list" aria-label="List View">
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
-                    <path d="M80-160v-160h160v160H80Zm240 0v-160h560v160H320ZM80-400v-160h160v160H80Zm240 0v-160h560v160H320ZM80-640v-160h160v160H80Zm240 0v-160h560v160H320Z"/>
-                </svg>
-            </button>
-        </div>
-        <article class="grid"></article>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Join Us Form</legend>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required title="Enter your first name" autocomplete="given-name">
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required title="Enter your last name" autocomplete="family-name">
+
+                <label for="org-title">Organizational Title:</label>
+                <input type="text" id="org-title" name="org-title" title="Enter your title (only letters, hyphens, spaces)" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required title="Enter your email address" placeholder="example@email.com" autocomplete="email">
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" required title="Enter your mobile number" autocomplete="tel">
+
+                <label for="organization">Organization Name:</label>
+                <input type="text" id="organization" name="organization" required title="Enter your organization name" autocomplete="organization">
+
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership">
+                    <option value="NP">Non-Profit</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold">Gold</option>
+                </select>
+
+                <label for="description">Organization Description:</label>
+                <textarea id="description" name="description" title="Describe your organization"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+
+        <section id="membership-cards">
+            <!-- Card structure with modals -->
+        </section>
     </main>
     <footer>
         <div class="class-project">
@@ -72,5 +100,6 @@
         </div>
     </footer>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </body>
 </html>

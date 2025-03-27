@@ -100,52 +100,18 @@ function displayCourses(filteredCourses) {
     updateCompletedCredits(); // Ensure to call this function here
 }
 function showCourseDetails(courseNumber) {
-    // Find the course by its number
-    const course = courses.find(c => c.number === courseNumber);
-    if (course) {
-        const courseDetails = document.getElementById("course-details");
-        courseDetails.className = "course-details";
-
-        // Display course details
-        courseDetails.innerHTML = `
-            <h3>${course.title}</h3>
-            <p>Type: ${course.subject}</p>
-            <p>Credits: ${course.credits}</p>
-            <p>${course.description}</p>
-            <p>Technologies: ${course.technology.join(', ')}</p>
-        `;
-    }
+    courseNumber.innerHTML = "";
+    courseNumber.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p><strong>Description:</strong> ${course.description}</p>
+    <p><strong>Technology:</strong> ${course.technology.join(", ")}</p>
+    `;
+    courseNumber.showModal();
+    closeModal.addEventListerner("click", () => {
+        courseNumber.close();
+    });
 }
-
-function filterCourses(type) {
-    let filteredCourses;
-    if (type === "all") {
-        filteredCourses = courses;
-    } else {
-        filteredCourses = courses.filter(course => course.subject === type);
-    }
-    displayCourses(filteredCourses);
-}
-
-function updateTotalCredits(filteredCourses) {
-    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
-    document.getElementById("total-credits").innerText = `Total Credits: ${totalCredits}`;
-}
-
-function countCompletedCredits() {
-    const completedCourses = courses.filter(course => course.completed);
-    const totalCompletedCredits = completedCourses.reduce((sum, course) => sum + course.credits, 0);
-    return totalCompletedCredits;
-}
-
-// Function to update the completed credits display
-function updateCompletedCredits() {
-    const completedCredits = countCompletedCredits();
-    document.getElementById("completed-credits").innerText = `Total completed credits: ${completedCredits}`;
-}
-
-// Initial display of all courses when the page loads
-filterCourses("all");
-
-// Update the completed credits display when the page loads
-updateCompletedCredits();
