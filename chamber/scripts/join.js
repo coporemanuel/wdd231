@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", function() {
     const formData = JSON.parse(localStorage.getItem("formData"));
     if (formData) {
-        // Populate the individual `<span>` elements
+
         document.getElementById("first-name").textContent = formData.firstName;
         document.getElementById("last-name").textContent = formData.lastName;
         document.getElementById("org-title").textContent = formData.orgTitle;
