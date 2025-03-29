@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/script.js" defer></script>
 </head>
-<body>
+<body class="join-page">
     <header>
         <img src="images/logotouse.png" alt="logo">
         <h1>Copore Solutions</h1>
@@ -66,13 +66,58 @@
 
                 <input type="hidden" id="timestamp" name="timestamp" value="">
                 
-                <input type="submit" value="Submit">
+                <button>
+                    Submit
+                </button>
             </fieldset>
         </form>
 
         <section id="membership-cards">
-            <!-- Card structure with modals -->
+            <div class="membership-card">
+                <h3>Non-Profit Membership</h3>
+                <button data-target="modal-np">Learn More</button>
+            </div>
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <button data-target="modal-bronze">Learn More</button>
+            </div>
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <button data-target="modal-silver">Learn More</button>
+            </div>
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <button data-target="modal-gold">Learn More</button>
+            </div>
         </section>
+        
+        <div id="modals">
+            <div id="modal-np" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>The Non-Profit Membership offers affordable access to exclusive resources, workshops, and networking opportunities tailored for organizations driving social impact.</p>
+                </div>
+            </div>
+            <div id="modal-bronze" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>The Bronze Membership is ideal for growing businesses, providing basic advertising, initial discounts, and access to broader professional networks.</p>
+                </div>
+            </div>
+            <div id="modal-silver" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>The Silver Membership caters to established businesses, offering enhanced visibility in campaigns, advanced training, and priority inclusion in organizational publications.</p>
+                </div>
+            </div>
+            <div id="modal-gold" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>The Gold Membership provides premium benefits, including VIP event sponsorships, personalized consulting, and top-tier recognition as a leader in the community with maximum visibility across platforms. Each level is designed to meet specific needs and elevate your organization’s reach and influence. Let me know if you need further refinements!</p>
+                </div>
+            </div>
+        </div>
+        
     </main>
     <footer>
         <div class="class-project">
@@ -101,5 +146,6 @@
     </footer>
     <script src="scripts/script.js" defer></script>
     <script src="scripts/index.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </body>
 </html>
