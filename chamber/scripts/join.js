@@ -57,7 +57,7 @@ document.querySelector("form").addEventListener("submit", function(event) {
 document.addEventListener("DOMContentLoaded", function() {
     const formData = JSON.parse(localStorage.getItem("formData"));
     if (formData) {
-        document.querySelector("ul").innerHTML = `
+        document.querySelector(".thankyou").innerHTML = `
             <li>First Name: ${formData.firstName}</li>
             <li>Last Name: ${formData.lastName}</li>
             <li>Email: ${formData.email}</li>
