@@ -355,7 +355,7 @@ form {
   }
   
 
-button {
+.submit-button  {
     background-color: #0056b3;
     color: #ffffff;
     border-radius: 10em;
@@ -368,12 +368,12 @@ button {
     box-shadow: 0 0 0 0 black;
   }
   
-  button:hover {
+  .submit-button:hover {
     transform: translateY(-4px) translateX(-2px);
     box-shadow: 2px 5px 0 0 black;
   }
   
-  button:active {
+  .submit-button:active {
     transform: translateY(2px) translateX(1px);
     box-shadow: 0 0 0 0 black;
   }
@@ -489,6 +489,32 @@ button {
     border: none;
 }
 
+/* THANKYOUPAGE  */
+.thankyou-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.thankyou-main h1 {
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.thankyou-main p {
+    font-size: 1.5rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.thankyou-main ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 1rem;
+}
+
 /* small view */
 @media (max-width: 900px) {
     #myButton {
@@ -571,7 +597,12 @@ button {
         flex-direction: column;
         align-items: center;
     }
+
+    .thankyou-main {
+        height: 100vh;
+    }
 }
+
 
 /* larger view */
 @media (min-width: 730px) {

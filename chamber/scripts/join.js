@@ -34,36 +34,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // THANK YOU PAGE 
 
-document.querySelector("form").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const formData = {
-        firstName: document.getElementById("first-name").value,
-        lastName: document.getElementById("last-name").value,
-        orgTitle: document.getElementById("org-title").value,
-        email: document.getElementById("email").value,
-        mobile: document.getElementById("mobile").value,
-        organization: document.getElementById("organization").value,
-        membership: document.getElementById("membership").value,
-        description: document.getElementById("description").value,
-        timestamp: new Date().toLocaleString()
-    };
-    
-    localStorage.setItem("formData", JSON.stringify(formData));
-    window.location.href = "thankyou.html";
-});
-
-
 document.addEventListener("DOMContentLoaded", function() {
     const formData = JSON.parse(localStorage.getItem("formData"));
     if (formData) {
-        document.querySelector(".thankyou").innerHTML = `
-            <li>First Name: ${formData.firstName}</li>
-            <li>Last Name: ${formData.lastName}</li>
-            <li>Email: ${formData.email}</li>
-            <li>Mobile Number: ${formData.mobile}</li>
-            <li>Organization Name: ${formData.organization}</li>
-            <li>Date & Time: ${formData.timestamp}</li>
-        `;
+        // Populate the individual `<span>` elements
+        document.getElementById("first-name").textContent = formData.firstName;
+        document.getElementById("last-name").textContent = formData.lastName;
+        document.getElementById("org-title").textContent = formData.orgTitle;
+        document.getElementById("email").textContent = formData.email;
+        document.getElementById("mobile").textContent = formData.mobile;
+        document.getElementById("organization").textContent = formData.organization;
+        document.getElementById("membership").textContent = formData.membership;
+    } else {
+        console.log("No data found in localStorage.");
     }
 });
