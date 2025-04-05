@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Parque Bolivar",
+        "address": "Calle Bolívar between O'Connor and Av. La Paz, Tarija, Bolivia",
+        "description": "Parque Bolivar is a public park in the heart of Tarija, Bolivia. It is a favorite spot for locals and visitors, featuring beautiful gardens, walking paths, and monuments that highlight Bolivia's cultural heritage.",
+        "websiteUrl": "https://tarijaturismo.com/parque-bolivar/",
+        "imageUrl": "https://tarijaturismo.com/wp-content/uploads/2025/02/Parque-Bolivar.webp"
+    },
+    {
+        "name": "Castillo Azul",
+        "address": "Calle Bolívar E-644 between Junín and O'Connor, Tarija, Bolivia",
+        "description": "Castillo Azul is a historic building designed in Art Nouveau style by Swiss-Italian architects. Once a country house for the Navajas family, it is admired for its iconic blue facade and intricate architecture.",
+        "websiteUrl": "https://www.ibolivia.org/castillo-azul-tarija",
+        "imageUrl": "https://tarijaturismo.com/wp-content/uploads/2024/11/castilloazul_DentroDeLaCiudad_alcaldia.webp"
+    },
+    {
+        "name": "Plaza Sucre",
+        "address": "Calle 15 de Abril between Calle Colón and Calle Suipacha, Tarija, Bolivia",
+        "description": "Plaza Sucre is a cozy square surrounded by gardens, cafes, and restaurants. It is a peaceful place to relax and soak in the lively atmosphere of Tarija.",
+        "websiteUrl": "https://boliviatrip.org/tarija/plazuela-sucre/",
+        "imageUrl": "https://tarijaturismo.com/wp-content/uploads/2024/11/Portada_Plazuela-Sucre_Plazas-y-Miradores_Alcaldia.webp"
+    },
+    {
+        "name": "Parque de las Flores",
+        "address": "La Loma Neighborhood, between Cochabamba Street and Aniceto Arce, Tarija, Bolivia",
+        "description": "Parque de las Flores is renowned for its blooming flowers and greenery, offering a serene escape for nature enthusiasts and those seeking tranquility.",
+        "websiteUrl": "https://tarijaturismo.com/parque-de-las-flores/",
+        "imageUrl": "https://tarijaturismo.com/wp-content/uploads/2025/02/Parque-de-las-Flores.webp"
+    },
+    {
+        "name": "Plaza Luis de Fuentes",
+        "address": "Calle Bolívar, Tarija, Bolivia",
+        "description": "Plaza Luis de Fuentes, the main square of Tarija, is a bustling hub with a fountain, statues, and landscaped gardens, making it an iconic meeting point in the city.",
+        "websiteUrl": "https://www.ibolivia.org/plaza-luis-de-fuentes-y-vargas",
+        "imageUrl": "https://tarijaturismo.com/wp-content/uploads/2024/11/Portada_Plaza-Luis-de-Fuentes-y-Vargas_Plazas-y-Miradores_Alcaldia.jpg.webp"
+    },
+    {
+        "name": "Represa de San Jacinto",
+        "address": "San Jacinto, Tarija, Bolivia",
+        "description": "Represa de San Jacinto is a reservoir perfect for outdoor activities like fishing and boating. The scenic views of the surrounding landscape make it a popular getaway.",
+        "websiteUrl": "https://tarijaturismo.com/represa-de-san-jacinto/",
+        "imageUrl": "https://tarijaturismo.com/wp-content/uploads/2024/11/Portada_Represa-de-San-Jacinto_Fuera-de-la-Ciudad_Alcaldia.webp"
+    },
+    {
+        "name": "Iglesia de San Roque",
+        "address": "General Trigo Street corner Fray Manuel Mingo, Tarija, Bolivia",
+        "description": "Iglesia de San Roque is a colonial church dedicated to Saint Roch, notable for its historical architecture and central role in the annual Fiesta de San Roque.",
+        "websiteUrl": "https://tarijaturismo.com/iglesia-de-san-roque/",
+        "imageUrl": "https://tarijaturismo.com/wp-content/uploads/2024/11/iglesiasanroque_DentroDeLaCiudad_alcaldia.webp"
+    },
+    {
+        "name": "Casa Dorada",
+        "address": "General Bernardo Trigo Street, Tarija, Bolivia",
+        "description": "Casa Dorada is an emblematic cultural site featuring modernist design and housing a gallery, library, and theater. It stands as a national monument of Bolivia.",
+        "websiteUrl": "https://www.ibolivia.org/casa-dorada-tarija",
+        "imageUrl": "https://tarijaturismo.com/wp-content/uploads/2024/11/casadelacultura_DentroDeLaCiudad_alcaldia.webp"
+    }
+]
