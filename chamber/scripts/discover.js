@@ -5,10 +5,8 @@ async function loadData() {
 
         const grid = document.querySelector("main");
 
-        // Clear the grid in case there's existing content
         grid.innerHTML = "";
 
-        // Loop through the JSON data to create sections for each place
         places.forEach((place) => {
             const section = document.createElement("section");
             section.innerHTML = `
@@ -19,7 +17,6 @@ async function loadData() {
                 <button class="learn-more" onclick="window.location.href='${place.websiteUrl || "#"}'">Learn More</button>
             `;
 
-            // Append each section to the main element
             grid.appendChild(section);
         });
     } catch (error) {
@@ -27,5 +24,31 @@ async function loadData() {
     }
 }
 
-// Execute the function to load the data when the page is loaded
 document.addEventListener("DOMContentLoaded", loadData);
+
+
+//WELCOME
+// Get current date
+const currentDate = new Date();
+const lastVisitDate = localStorage.getItem('lastVisit');
+const sidebar = document.getElementById('welcome');
+
+if (!lastVisitDate) {
+    // First visit
+    sidebar.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    
+    const lastDate = new Date(parseInt(lastVisitDate, 10));
+    const timeDiff = currentDate - lastDate;
+    const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+    if (timeDiff < (1000 * 60 * 60 * 24)) {
+        sidebar.textContent = "Back so soon! Awesome!";
+    } else if (daysDiff === 1) {
+        sidebar.textContent = `You last visited 1 day ago.`;
+    } else {
+        sidebar.textContent = `You last visited ${daysDiff} days ago.`;
+    }
+}
+
+localStorage.setItem('lastVisit', currentDate.getTime());
