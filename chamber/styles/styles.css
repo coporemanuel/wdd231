@@ -621,9 +621,6 @@ form {
         padding: 8px;
     }
 
-    .discover img:hover {
-        border-radius: none;
-    }
 
     .place-image {
         width: 100%;
