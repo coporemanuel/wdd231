@@ -590,8 +590,8 @@ form {
 /* medium view  */
 @media (min-width: 641px) and (max-width: 1024px) {
     .discover {
-        grid-template-columns: repeat(1, 1fr); /* Two columns for medium screens */
-        gap: 12px; /* Slightly smaller spacing */
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
         padding: 12px;
     }
 
@@ -606,14 +606,14 @@ form {
     }
 
     .learn-more {
-        font-size: 0.9em; /* Slightly smaller button text */
+        font-size: 0.9em; 
     }
 }
 
 @media (min-width: 320px) and (max-width: 640px) {
     .discover {
-        grid-template-columns: 1fr; /* Single column layout */
-        gap: 8px; /* Smaller spacing */
+        grid-template-columns: 1fr;
+        gap: 8px; 
         padding: 8px;
     }
 
@@ -625,20 +625,20 @@ form {
     .place-image {
         width: 100%;
         height: auto;
-        max-height: 150px; /* Restrict image height */
-        object-fit: cover; /* Ensure images scale nicely */
+        max-height: 150px; 
+        object-fit: cover;
     }
 
     h2 {
-        font-size: 1.2em; /* Slightly smaller for better readability */
+        font-size: 1.2em;
     }
 
     p {
-        font-size: 0.9em; /* Adjust text size for compact layout */
+        font-size: 0.9em;
     }
 
     .learn-more {
-        font-size: 0.8em; /* Smaller button text */
+        font-size: 0.8em;
         padding: 6px 12px;
     }
 }

@@ -27,8 +27,7 @@ async function loadData() {
 document.addEventListener("DOMContentLoaded", loadData);
 
 
-//WELCOME
-// Get current date
+//WELCOME MESSAGE
 const currentDate = new Date();
 const lastVisitDate = localStorage.getItem('lastVisit');
 const sidebar = document.getElementById('welcome');
