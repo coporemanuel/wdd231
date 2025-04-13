@@ -15,26 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// CONTACT
-// Get the modal and the button that opens it
+// CONTACT 
 const modal = document.getElementById("contact");
 const openModalButton = document.querySelector("[data-target='support']");
 const closeModalButton = modal.querySelector(".close");
 
-// Open the modal when the button is clicked
 openModalButton.addEventListener("click", () => {
     modal.style.display = "block";
 });
 
-// Close the modal when the close button is clicked
 closeModalButton.addEventListener("click", () => {
     modal.style.display = "none";
 });
 
-// Close the modal when clicking outside of the modal content
 window.addEventListener("click", (event) => {
     if (event.target === modal) {
         modal.style.display = "none";
     }
 });
-
