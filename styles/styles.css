@@ -519,7 +519,7 @@ footer div p {
     transform: scale(1.05);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     #myButton {
         display: grid;
         font-size: 2rem;
@@ -637,17 +637,6 @@ footer div p {
     #myButton {
         font-size: 1.5rem;
         padding: 0.5rem 3vw;
-    }
-
-    nav menu {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    nav menu li a {
-        font-size: 1.6rem;
-        padding: 12px 25px;
     }
 
     header h1 {
