@@ -249,7 +249,7 @@ nav menu li a {
 }
 
 footer {
-    height: 25vh;
+    height: auto;
     background-color: var(--secondcolor);
     padding: 10px;
     width: 100%;
