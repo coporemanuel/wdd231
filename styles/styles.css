@@ -426,6 +426,94 @@ footer div p {
     font-size: 1em;
     line-height: 2;
 }
+
+/* CONTACT PAGE  */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+.myexperience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--thirdcolor);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.myexperience img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px; 
+}
+
+.myexperience h2 {
+    font-size: 3rem;
+    color: var(--firstcolor);
+    margin-bottom: 20px;
+}
+
+.myexperience p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 55%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.myexperience button {
+    background-color: var(--fourthcolor);
+    color: var(--secondcolor);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 2rem;
+}
+.myexperience button:hover {
+    background-color: var(--secondcolor);
+    color: var(--fourthcolor);
+    transform: scale(1.05);
+}
 /* Tamaño mediano: Tablets (pantallas entre 768px y 1024px) */
 @media (max-width: 1024px) {
     header h1 {
