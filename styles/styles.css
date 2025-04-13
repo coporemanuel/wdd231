@@ -117,9 +117,9 @@ nav menu li a {
 .container {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, 300px);
-    grid-auto-rows: 300px;
-    gap: 20px;
+    grid-template-columns: repeat(2, 500px);
+    grid-auto-rows: 500px;
+    gap: 50px;
     margin-bottom: 20px;
   }
   
@@ -131,7 +131,7 @@ nav menu li a {
 
 .leftcontainer,
 .rightcontainer {
-    width: 300px;
+    width: 400px;
     height: auto;
     padding: 10px;
     margin: 20px auto;
@@ -179,7 +179,7 @@ nav menu li a {
 }
 .leftcontainer button,
 .rightcontainer button {
-    width: 120px;
+    width: 130px;
     height: 35px;
     background-color: var(--firstcolor);
     color: var(--thirdcolor);
@@ -252,7 +252,6 @@ footer {
     height: 25vh;
     background-color: var(--secondcolor);
     padding: 10px;
-    bottom: 0;
     width: 100%;
     margin-top: 40px; 
     display: flex;
