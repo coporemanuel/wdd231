@@ -13,7 +13,7 @@ async function loadData() {
             const section = document.createElement("div");
             section.classList.add("cards-jobs");
             section.innerHTML = `
-                <img src="${companie.image}" alt="${companie.name}" class="place-image" />
+                <img src="${companie.image}" alt="${companie.name}" class="place-image" loading="lazy"/>
                 <h2>${companie.company}</h2>
                 <h3>${companie.modality}</h3>
                 <p>${companie.description}</p>

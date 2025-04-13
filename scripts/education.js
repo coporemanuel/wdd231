@@ -13,7 +13,7 @@ async function loadData() {
             const section = document.createElement("div");
             section.classList.add("cards-education");
             section.innerHTML = `
-                <img src="${organization.image}" alt="${organization.title}" class="place-image" />
+                <img src="${organization.image}" alt="${organization.title}" class="place-image" loading="lazy"/>
                 <h2>${organization.title}</h2>
                 <h3>${organization.modality}</h3>
                 <p>${organization.description}</p>
