@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manuel Copore, WDD 231, Course page">
+    <meta name="author" content="Manuel Copore">
+    <meta property="og:title" content="WDD 231 - Jose Manuel Copore Cutipa">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://coporemanuel.github.io/wdd231/images/descarga.webp">
+    <meta property="og:url" content="https://coporemanuel.github.io/wdd231/">
+    <title>WDD 231 - Jose Manuel Copore Cutipa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <img src="images/profile.png" alt="myphoto">
+            <span> Jose Manuel Copore Cutipa</span>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/coporemanuel">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/manuel-copore-a75078316/">Linkedln</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Home</h1>
+            <div class="flex-row">
+                <section class="course-work">
+                    <h2>Course Work</h2>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
+                <section class="country">
+                    <h2>My city and country</h2>
+                    <img src="images/bermejo.jpeg" alt="Bermejo, Tarija, Bolivia">
+                    <p>Bermejo, Tarija, Bolivia</p>
+                </section>
+            </div>
+            <section class="certificate">
+                <h2>Web and Computer Programming Certificate</h2>
+                <div class="course-filter-buttons">
+                    <button onclick="filterCourses('all')">All Courses</button>
+                    <button onclick="filterCourses('WDD')">WDD Courses</button>
+                    <button onclick="filterCourses('CSE')">CSE Courses</button>
+                </div>
+                <div id="completed-credits"></div>
+                <div id="course-cards"></div>
+                <div id="total-credits"></div>
+                <div id="courses-details"></div>
+                <dialog id="courses-details"></dialog>
+            </section>
+        </main>
+        <footer>
+            <p id="copyright"> Jose Manuel Copore Cutipa</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/script.js"></script>
+    </div>
+</body>
+</html>

@@ -3,69 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Manuel Copore, WDD 231, Course page">
-    <meta name="author" content="Manuel Copore">
-    <meta property="og:title" content="WDD 231 - Jose Manuel Copore Cutipa">
+    <meta name="description" content="Inspiring Future Hub is a website that provides information about education and job opportunities.">
+    <meta name="author" content="Jose Manuel Copore Cutipa">
+    <meta property="og:title" content="Inspiring Future Hub">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://coporemanuel.github.io/wdd231/images/descarga.webp">
-    <meta property="og:url" content="https://coporemanuel.github.io/wdd231/">
-    <title>WDD 231 - Jose Manuel Copore Cutipa</title>
+    <meta property="og:image" content="images/main.webp">
+    <meta property="og:url" content="myurlafter sicronized">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/smallview.css">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main-container">
-        <header>
-            <img src="images/profile.png" alt="myphoto">
-            <span> Jose Manuel Copore Cutipa</span>
-        </header>
+    <header>
+        <img src="images/wdd231logo.png" alt="Inspiring Future Hub">
+        <h1>Inspiring Future Hub</h1>
+        <button id="myButton" aria-label="Toggle Menu">&#9776;</button>
         <nav>
-            <ul>
+            <menu class="menu">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="https://github.com/coporemanuel">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/manuel-copore-a75078316/">Linkedln</a></li>
-            </ul>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </menu>
         </nav>
-        <main>
-            <h1>Home</h1>
-            <div class="flex-row">
-                <section class="course-work">
-                    <h2>Course Work</h2>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </section>
-                <section class="country">
-                    <h2>My city and country</h2>
-                    <img src="images/bermejo.jpeg" alt="Bermejo, Tarija, Bolivia">
-                    <p>Bermejo, Tarija, Bolivia</p>
-                </section>
+    
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <img class="hero" src="images/main.webp" alt="hero image">
+            <h2>Education is the key wich will unlock the door of opportunity for you.
+                This is your opportunity
+            </h2>
+        </div>
+
+        <div class="container">
+            <div class="leftcontainer">
+                <img src="images/online.webp" alt="1">
+                <h3>Education</h3>
+                <p>There are incredible opportunities where you can expand your knowledge and even 
+                    obtain a university degree.</p>
+                <button onclick="location.href='education.html'">
+                    Learn More
+                </button>
             </div>
-            <section class="certificate">
-                <h2>Web and Computer Programming Certificate</h2>
-                <div class="course-filter-buttons">
-                    <button onclick="filterCourses('all')">All Courses</button>
-                    <button onclick="filterCourses('WDD')">WDD Courses</button>
-                    <button onclick="filterCourses('CSE')">CSE Courses</button>
-                </div>
-                <div id="completed-credits"></div>
-                <div id="course-cards"></div>
-                <div id="total-credits"></div>
-                <div id="courses-details"></div>
-                <dialog id="courses-details"></dialog>
-            </section>
-        </main>
-        <footer>
-            <p id="copyright"> Jose Manuel Copore Cutipa</p>
-            <p id="lastModified"></p>
-        </footer>
-        <script src="scripts/script.js"></script>
-    </div>
+            <div class="rightcontainer">
+                <img src="images/jobs.webp" alt="2">
+                <h3>Jobs opportunities</h3>
+                <p>With your skills you can find incredible opportunities</p>
+                <button onclick="location.href='jobs.html'">
+                    Learn More
+                </button>
+            </div>
+          </div>
+
+          <div class="experience">
+            <img src="images/me.jpg" alt="my experience">
+            <p>I create this website to inspiring others getting a better eduation. When I try these resources in my own life and now I'm being blessing with a lot of opportunities.
+                Read my full experience, click in the button below
+            </p>
+
+            <button onclick="location.href='contact.html'">
+                Read more
+            </button>
+          </div>
+    </main>
+
+    <footer>
+       <div>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="images/socialmedia/instagram.svg" alt="instagram">
+                Instagram
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/socialmedia/facebook.svg" alt="facebook">
+                Facebook
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="images/socialmedia/linkedin.svg" alt="Linkedln">
+                LinkedIn
+            </a>
+        </div>
+        <div class="details">
+            <p>Inspiring Future Hub</p>
+            <a href="https://maps.app.goo.gl/8JbYXY1Ru1TPWu25A">Address #123, Bermejo, Bolivia</a>
+            <a href="mailto:micorreo@gmail.com">myemailisanexample@gmail.com</a>
+            <a href="tel:111111111">(111)-111-111</a>
+            <p id="copyright"></p>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
