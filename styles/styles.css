@@ -618,7 +618,6 @@ footer div p {
 
     .cards-education, .cards-jobs {
         max-width: 80%;
-        margin: 0 auto;
     }
     footer {
         flex-direction: column;
